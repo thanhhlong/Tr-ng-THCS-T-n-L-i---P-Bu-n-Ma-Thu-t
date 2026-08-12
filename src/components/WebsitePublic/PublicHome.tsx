@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import tanLoiLogo from '../../assets/images/tan_loi_logo_1786361503805.jpg';
+import tanLoiLogo from '../../assets/images/LOGO.jpg';
 import { useSiteContent } from '../../context/SiteContentContext';
 import {
   Calendar,
@@ -395,17 +395,10 @@ export const PublicHome: React.FC<PublicHomeProps> = ({
               <GraduationCap className="w-4 h-4 text-emerald-300" />
             </div>
 
-            <div className="flex items-center space-x-3">
-              <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200"
-                alt="Hiệu trưởng ThS. Nguyễn Minh Trí"
-                className="w-16 h-16 rounded-xl object-cover ring-2 ring-amber-400 shadow-md shrink-0"
-              />
-              <div>
-                <div className="text-xs font-extrabold text-white">ThS. NGUYỄN MINH TRÍ</div>
-                <div className="text-[10px] text-amber-300 font-semibold">Hiệu trưởng THCS Tân Lợi</div>
-                <div className="text-[10px] text-emerald-200 mt-0.5 italic">"Xây dựng môi trường giáo dục hạnh phúc, kỷ cương, chất lượng số."</div>
-              </div>
+            <div className="pt-1">
+              <div className="text-xs font-extrabold text-amber-300 uppercase">{schoolInfo.principal}</div>
+              <div className="text-[10px] text-emerald-200 font-semibold mt-0.5">Hiệu trưởng {schoolInfo.name}</div>
+              <div className="text-[11px] text-emerald-100 mt-2 italic border-l-2 border-amber-400 pl-2.5 py-0.5">"Xây dựng môi trường giáo dục hạnh phúc, kỷ cương, chất lượng số."</div>
             </div>
 
             <p className="text-[11px] text-emerald-100 leading-relaxed pt-1 border-t border-emerald-800/80">
@@ -645,7 +638,7 @@ export const PublicHome: React.FC<PublicHomeProps> = ({
             </div>
             <div className="flex items-center space-x-2 text-slate-300">
               <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Người chịu trách nhiệm chính: Hiệu trưởng ThS. Nguyễn Minh Trí</span>
+              <span>Người chịu trách nhiệm chính: Hiệu trưởng {schoolInfo.principal}</span>
             </div>
           </div>
 

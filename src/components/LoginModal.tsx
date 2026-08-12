@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSiteContent } from '../context/SiteContentContext';
-import tanLoiLogo from '../assets/images/tan_loi_logo_1786361503805.jpg';
+import tanLoiLogo from '../assets/images/LOGO.jpg';
 import { ShieldCheck, Lock, User, Eye, EyeOff, KeyRound, Check, X, AlertCircle } from 'lucide-react';
 
 export const LoginModal: React.FC = () => {

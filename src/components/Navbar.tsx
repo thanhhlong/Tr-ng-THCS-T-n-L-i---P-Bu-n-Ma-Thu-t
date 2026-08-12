@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { UserRole } from '../types';
 import { demoUsers } from '../data/mockData';
 import { useSiteContent } from '../context/SiteContentContext';
-import tanLoiLogo from '../assets/images/tan_loi_logo_1786361503805.jpg';
+import tanLoiLogo from '../assets/images/LOGO.jpg';
 import {
   Search,
   Bell,

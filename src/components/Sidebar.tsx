@@ -1,6 +1,6 @@
 import React from 'react';
 import { User } from '../types';
-import tanLoiLogo from '../assets/images/tan_loi_logo_1786361503805.jpg';
+import tanLoiLogo from '../assets/images/LOGO.jpg';
 import {
   LayoutDashboard,
   Users,

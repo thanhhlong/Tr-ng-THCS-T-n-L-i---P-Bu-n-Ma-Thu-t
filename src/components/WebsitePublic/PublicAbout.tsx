@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSiteContent } from '../../context/SiteContentContext';
-import tanLoiLogo from '../../assets/images/tan_loi_logo_1786361503805.jpg';
+import tanLoiLogo from '../../assets/images/LOGO.jpg';
 import { Building, GraduationCap, Award, Users, CheckCircle, Heart, Target, Sparkles } from 'lucide-react';
 
 export const PublicAbout: React.FC = () => {
@@ -32,22 +32,17 @@ export const PublicAbout: React.FC = () => {
       </div>
 
       {/* Principal Statement */}
-      <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-xs grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-        <div className="text-center">
-          <img
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400"
-            alt={schoolInfo.principal}
-            className="w-40 h-40 rounded-full object-cover mx-auto ring-4 ring-emerald-500/30 shadow-lg"
-          />
-          <h3 className="text-base font-bold text-slate-900 mt-4">{schoolInfo.principal}</h3>
-          <p className="text-xs text-emerald-700 font-bold">Hiệu trưởng Nhà trường</p>
-        </div>
-
-        <div className="md:col-span-2 space-y-3 text-slate-700 text-xs sm:text-sm leading-relaxed">
-          <div className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+      <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-xs space-y-4">
+        <div className="border-b border-slate-100 pb-4">
+          <div className="text-xs font-bold text-emerald-600 uppercase tracking-widest">
             THÔNG ĐIỆP TỪ HIỆU TRƯỜNG
           </div>
-          <p className="text-base font-semibold text-slate-900 italic">
+          <h3 className="text-xl font-extrabold text-slate-900 mt-1">{schoolInfo.principal}</h3>
+          <p className="text-xs text-emerald-700 font-bold mt-0.5">Hiệu trưởng {schoolInfo.name}</p>
+        </div>
+
+        <div className="space-y-3 text-slate-700 text-xs sm:text-sm leading-relaxed">
+          <p className="text-base font-semibold text-slate-900 italic border-l-4 border-emerald-500 pl-4 py-1">
             "Mỗi em học sinh tại {schoolInfo.name} là một mầm xanh tài năng độc bản. Chúng tôi cam kết duy trì truyền thống {schoolInfo.slogan} và kiến tạo một không gian giáo dục an toàn, hiện đại."
           </p>
           <p>

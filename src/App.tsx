@@ -4,7 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Sidebar } from './components/Sidebar';
 import { LoginModal } from './components/LoginModal';
 import { SiteContentProvider, useSiteContent } from './context/SiteContentContext';
-import tanLoiLogo from './assets/images/tan_loi_logo_1786361503805.jpg';
+import tanLoiLogo from './assets/images/LOGO.jpg';
 
 // Portal 1: Website Public Components
 import { PublicHome } from './components/WebsitePublic/PublicHome';
@@ -20,6 +20,7 @@ import { StudentManagement } from './components/AdminPortal/StudentManagement';
 import { ParentManagement } from './components/AdminPortal/ParentManagement';
 import { ClassManagement } from './components/AdminPortal/ClassManagement';
 import { ReportsModule } from './components/AdminPortal/ReportsModule';
+import { RoleManagement } from './components/AdminPortal/RoleManagement';
 
 // Portal 3: Teacher Portal Components
 import { TeacherDashboard } from './components/TeacherPortal/TeacherDashboard';
@@ -123,6 +124,7 @@ function AppContent() {
       if (activeTab === 'admin-classes') return <ClassManagement />;
       if (activeTab === 'admin-reports') return <ReportsModule />;
       if (activeTab === 'admin-timetable') return <StudentTimetable />;
+      if (activeTab === 'admin-roles') return <RoleManagement />;
       return <AdminDashboard />;
     }
 
