@@ -1,6 +1,6 @@
 import React from 'react';
 import { User } from '../types';
-import tanLoiLogo from '../assets/images/LOGO.jpg';
+import tanLoiLogo from '../assets/images/LOGO1024.jpg';
 import {
   LayoutDashboard,
   Users,
