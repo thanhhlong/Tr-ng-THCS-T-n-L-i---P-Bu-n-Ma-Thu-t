@@ -1,0 +1,6 @@
+{
+  "name": "Trường THCS Tân Lợi - School Digital Platform",
+  "description": "Cổng thông tin và hệ thống quản lý toàn diện Trường THCS Tân Lợi (BMT) với các phân hệ Quản trị, Giáo viên, Học sinh, Phụ huynh và AI Education Hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
