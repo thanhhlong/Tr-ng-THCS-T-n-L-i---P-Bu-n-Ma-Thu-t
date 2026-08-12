@@ -1,5 +1,5 @@
 import React from 'react';
-import tanLoiLogo from '../assets/images/LOGO.jpg';
+import tanLoiLogo from '..src/assets/images/logo1024.jpg';
 
 interface SchoolLogoProps {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
